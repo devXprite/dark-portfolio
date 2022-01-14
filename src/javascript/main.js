@@ -1,3 +1,11 @@
+AOS.init();
+
+Waves.init();
+Waves.attach('button, .experience .container div', ['waves-light']);
+
+const trigger = new ScrollTrigger();
+// trigger.add('[data-trigger]');
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -32,10 +40,6 @@ async function startTyping() {
     });
 
 }
-
-Waves.init();
-
-Waves.attach('button, .experience .container div', [ 'waves-light']);
 
 scramble();
 startTyping();
