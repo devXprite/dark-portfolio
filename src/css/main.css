@@ -196,13 +196,24 @@ body {
   font-weight: normal;
 }
 
-.about {
+.about .container{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.about > div > div:nth-child(1) > img{
+  border-radius: 1em;
+  height: 300px;
+  margin-bottom: 2em;
 }
 
 .headline {
   margin-top: 6vh;
   font-family: "Comfortaa", cursive;
   font-size: 1.65rem;
+  color: chartreuse;
 }
 
 .about p {
@@ -228,7 +239,6 @@ body {
 }
 
 section.skills {
-  height: 50vh;
   background-color: #282828;
 }
 
@@ -337,6 +347,7 @@ textarea:focus:invalid {
   width: 90%;
   max-width: 500px;
   margin: auto;
+  margin-bottom: 3em;
 }
 
 .progress-bar-label{
@@ -403,7 +414,7 @@ footer div p {
 }
 
 footer div a {
-  color: lime;
+  color: aqua;
   text-decoration: none;
 }
 
@@ -458,9 +469,21 @@ footer div a {
   .experience .container > div {
     width: 90%;
   }
+
+.about .container{
+  flex-direction: column;
+}
+
+.about > div > div:nth-child(1) > img{
+  margin-top: 1em;
+}
 }
 
 body > main > section.contact > p {
   width: 90%;
   margin: auto;
+}
+
+section{
+  overflow: hidden;
 }

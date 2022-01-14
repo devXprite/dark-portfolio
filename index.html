@@ -31,8 +31,6 @@
     <script src="./src/javascript/owl.carousel.min.js"></script>
     <script src="./src/javascript/particles.min.js"></script>
     <script src="./src/javascript/smooth-scroll.min.js"></script>
-    <!-- <script src="./src/javascript/ScrollTrigger.min.js"></script> -->
-    <script src="./src/javascript/ScrollTrigger.js"></script>
     <script src="./src/javascript/typed.js"></script>
     <script src="./src/javascript/waves.min.js"></script>
 
@@ -92,30 +90,39 @@
         <section class="about">
 
             <h2 class="headline">About me</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet laudantium quam quis libero
-                recusandae. Necessitatibus ab temporibus nemo labore illo ea doloremque totam aspernatur
-                reiciendis
-                deleniti magnam officiis sequi rerum libero quisquam, deserunt quaerat natus doloribus molestiae
-                tempore sit odio itaque. Veritatis, necessitatibus. Fugiat labore architecto ut maiores quidem
-                deleniti saepe, neque ipsa incidunt error nemo quasi distinctio, fuga sapiente nulla temporibus
-                qui,
-                ab tempora. Non iure minus pariatur error nemo dolorem ipsum odio autem, in et voluptas rem
-                corporis
-                eos nesciunt quam neque nihil, ducimus iusto. Enim laboriosam nostrum totam ab perspiciatis iste
-                sed, autem porro facilis, explicabo est.
-            </p>
 
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid porro, expedita
-                labore,
-                aut nesciunt cupiditate quaerat, impedit voluptatem consectetur culpa magnam atque illo
-                molestiae ad
-                odio cum dignissimos fugiat mollitia soluta. Magni, incidunt. Sapiente maiores doloremque quia
-                inventore nesciunt!
-            </p>
+            <div class="container">
+                <div>
+                    <img src="./src/imges/capture.jpg" alt="" srcset="" data-aos="zoom-in">
+                </div>
+                <div>
+                    <p data-aos="fade-up-right">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet laudantium quam quis libero
+                        recusandae. Necessitatibus ab temporibus nemo labore illo ea doloremque totam aspernatur
+                        reiciendis
+                        deleniti magnam officiis sequi rerum libero quisquam, deserunt quaerat natus doloribus molestiae
+                        tempore sit odio itaque. Veritatis, necessitatibus. Fugiat labore architecto ut maiores quidem
+                        deleniti saepe, neque ipsa incidunt error nemo quasi distinctio, fuga sapiente nulla temporibus
+                        qui,
+                        ab tempora. Non iure minus pariatur error nemo dolorem ipsum odio autem, in et voluptas rem
+                        corporis
+                        eos nesciunt quam neque nihil, ducimus iusto. Enim laboriosam nostrum totam ab perspiciatis iste
+                        sed, autem porro facilis, explicabo est.
+                    </p>
 
-            <button> Download CV </button> <br>
+                    <p data-aos="fade-up-left">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid porro, expedita
+                        labore,
+                        aut nesciunt cupiditate quaerat, impedit voluptatem consectetur culpa magnam atque illo
+                        molestiae ad
+                        odio cum dignissimos fugiat mollitia soluta. Magni, incidunt. Sapiente maiores doloremque quia
+                        inventore nesciunt!
+                    </p>
+
+                    <button> Download CV </button> <br>
+                </div>
+            </div>
+
         </section>
 
         <section class="skills"> <br>
@@ -123,36 +130,42 @@
 
             <div class="container">
 
-                <div class="progress-bar-wrapper">
+                <div class="progress-bar-wrapper" data-aos="fade-up-right">
                     <p class="progress-bar-label">HTML</p>
                     <div class="progress-bar">
-                        <div class="progress"></div>
+                        <div class="progress" style="width: 90%;"></div>
                     </div>
                 </div>
 
-                <div class="progress-bar-wrapper">
-                    <p class="progress-bar-label">HTML</p>
+                <div class="progress-bar-wrapper" data-aos="fade-up-left">
+                    <p class="progress-bar-label">CSS</p>
                     <div class="progress-bar">
-                        <div class="progress"></div>
+                        <div class="progress" style="width: 55%;"></div>
                     </div>
                 </div>
 
-                <div class="progress-bar-wrapper">
-                    <p class="progress-bar-label">HTML</p>
+                <div class="progress-bar-wrapper" data-aos="fade-up-right">
+                    <p class="progress-bar-label">JavaScript</p>
                     <div class="progress-bar">
-                        <div class="progress"></div>
+                        <div class="progress" style="width: 75%;"></div>
                     </div>
                 </div>
 
-                <div class="progress-bar-wrapper">
-                    <p class="progress-bar-label">HTML</p>
+                <div class="progress-bar-wrapper" data-aos="fade-up-left">
+                    <p class="progress-bar-label">PHP</p>
                     <div class="progress-bar">
-                        <div class="progress"></div>
+                        <div class="progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-bar-wrapper" data-aos="fade-up-right">
+                    <p class="progress-bar-label">React</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
                     </div>
                 </div>
 
             </div>
-
         </section>
 
         <section class="experience">
@@ -196,7 +209,7 @@
         </section>
 
         <section class="projects">
-            
+
         </section>
 
         <section class="contact"> <br>
@@ -210,7 +223,7 @@
                     <input type="text" name="name" placeholder="Name" id="" required>
                     <input type="email" name="mail" id="" placeholder="email" required>
                     <input type="text" name="subject" id="" placeholder="Subject" required>
-                    <textarea name="msg" cols="30" rows="10" placeholder="YOur Message" required></textarea>
+                    <textarea name="msg" cols="30" rows="10" placeholder="Your Message" required></textarea>
 
                     <button type="submit">Send Message</button>
                 </form>
