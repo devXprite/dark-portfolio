@@ -212,8 +212,9 @@ body {
 .headline {
   margin-top: 6vh;
   font-family: "Comfortaa", cursive;
-  font-size: 1.65rem;
-  color: chartreuse;
+  font-size: 0rem;
+  /* font-size: 1.65rem; */
+  color: white;
 }
 
 .about p {
@@ -336,7 +337,7 @@ textarea:focus:invalid {
   margin: 4px;
   color: #121212;
   pointer-events: all;
-  transition: all 1s;
+  transition: all .3s;
 }
 
 .social .fab:hover {
@@ -486,4 +487,8 @@ body > main > section.contact > p {
 
 section{
   overflow: hidden;
+}
+
+#particles > div > div > p{
+  font-size: 1.3em;
 }
