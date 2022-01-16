@@ -149,15 +149,17 @@ body {
 .home {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
       136deg,
       rgb(68, 132, 206),
       rgb(26, 215, 192),
       rgb(255, 155, 17),
       rgb(155, 89, 182)
     )
-    0% 0% / 600% 600%;
+    0% 0% / 600% 600%; */
 
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
   animation: BackgroundAnimation 40s ease infinite alternate;
 }
 
@@ -194,16 +196,20 @@ body {
   font-size: 6rem;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
+  background-image: linear-gradient(to right, #30cfd0 0%, lawngreen 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.about .container{
+.about .container {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.about > div > div:nth-child(1) > img{
+.about > div > div:nth-child(1) > img {
   border-radius: 1em;
   height: 300px;
   margin-bottom: 2em;
@@ -260,6 +266,12 @@ section.skills {
   width: 45%;
   text-align: left;
   line-height: 2;
+  border: 2px transparent solid;
+  transition: all .7s;
+}
+
+.experience .container > div:hover{
+  border-color: chartreuse;
 }
 
 .experience .container > div .title {
@@ -291,6 +303,7 @@ textarea {
   color: white;
   border-radius: 0.25rem;
   font-size: 1rem;
+  transition: all .5s;
 }
 
 .form textarea {
@@ -330,14 +343,20 @@ textarea:focus:invalid {
 }
 
 .social .fab {
-  font-size: 3em;
+  font-size: 2.5em;
   padding-left: 5px;
   padding-right: 5px;
   transition: all 0.8s;
   margin: 4px;
   color: #121212;
   pointer-events: all;
-  transition: all .3s;
+  transition: all 0.3s;
+  background-image:linear-gradient(147deg, #000000 0%, #55efc4 74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* background-color: #000000; */
+/* background-image: linear-gradient(147deg, #000000 0%, #434343 74%); */
 }
 
 .social .fab:hover {
@@ -351,11 +370,11 @@ textarea:focus:invalid {
   margin-bottom: 3em;
 }
 
-.progress-bar-label{
+.progress-bar-label {
   text-align: left;
 }
 
-.progress-bar-wrapper{
+.progress-bar-wrapper {
   margin: 20px auto;
 }
 
@@ -471,13 +490,13 @@ footer div a {
     width: 90%;
   }
 
-.about .container{
-  flex-direction: column;
-}
+  .about .container {
+    flex-direction: column;
+  }
 
-.about > div > div:nth-child(1) > img{
-  margin-top: 1em;
-}
+  .about > div > div:nth-child(1) > img {
+    margin-top: 1em;
+  }
 }
 
 body > main > section.contact > p {
@@ -485,10 +504,38 @@ body > main > section.contact > p {
   margin: auto;
 }
 
-section{
+section {
   overflow: hidden;
 }
 
-#particles > div > div > p{
+#particles > div > div > p {
   font-size: 1.3em;
+  color: #afafaf;
+}
+
+#particles > div > a {
+  font-size: 3em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  animation: down-arrow 2s ease-in-out infinite alternate;
+}
+
+@keyframes down-arrow {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 1em;
+  }
+}
+
+.scrollbar{
+  height: 0.25rem;
+  background: linear-gradient(to right, #30cfd0 0%, lawngreen 100%);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }

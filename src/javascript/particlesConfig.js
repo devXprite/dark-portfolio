@@ -8,7 +8,7 @@ particlesJS("particles", {
             },
         },
         color: {
-            value: "#343434",
+            value: "#afafaf",
         },
         shape: {
             type: "circle",
@@ -36,7 +36,7 @@ particlesJS("particles", {
             },
         },
         size: {
-            value: 2,
+            value: 1.5,
             random: true,
             anim: {
                 enable: false,
@@ -46,15 +46,15 @@ particlesJS("particles", {
             },
         },
         line_linked: {
-            enable: true,
+            enable: false,
             distance: 150,
-            color: "#343434",
+            color: "#bbb",
             opacity: 0.4,
             width: 1,
         },
         move: {
             enable: true,
-            speed: 6,
+            speed: 8,
             direction: "none",
             random: false,
             straight: false,
@@ -72,7 +72,7 @@ particlesJS("particles", {
         events: {
             onhover: {
                 enable: true,
-                mode: "grab",
+                mode: "repulse",
             },
             onclick: {
                 enable: true,

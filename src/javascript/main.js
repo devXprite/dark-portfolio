@@ -36,63 +36,70 @@ function testAnimation(el) {
     });
 }
 
-function animateHeading(el) {
+gsap.to('section.about img', {
+    scrollTrigger: {
+        trigger: 'section.about img',
+        start: "top 10%",
+        markers: false,
+        scrub: true,
+        toggleActions: "restart pause reverse none"
+    },
+    ease: 'none',
+    scale: '0.1',
+    x: '-50vh',
+    rotate: '360deg'
+});
+
+gsap.to('.scrollbar', {
+    scrollTrigger: {
+        trigger: 'body',
+        start: "top 0px",
+        end: "bottom 100%",
+        markers: false,
+        scrub: true
+    },
+    ease: 'none',
+    width: '100%'
+});
+
+(document.querySelectorAll(".headline")).forEach(el => {
     gsap.to(el, {
         scrollTrigger: {
             trigger: el,
             start: "top 90%",
             end: "bottom 50%",
-            markers: true,
+            markers: false,
             scrub: true,
-            onEnter: () => {
-                console.log('enter')
-            },
             toggleActions: "restart pause reverse none"
         },
         fontSize: '1.65rem',
         color: '#7fff00',
     });
-}
+});
 
-
-function animateIcon(el) {
+(document.querySelectorAll(".container .fab")).forEach(el => {
     gsap.to(el, {
         scrollTrigger: {
             trigger: el,
-            start: "top 40%",
-            markers: true,
+            start: "top 50%",
+            markers: false,
             scrub: true,
-            onEnter: () => {
-                console.log('enter')
-            },
             toggleActions: "restart pause reverse none"
         },
-        rotate: '60deg',
+        rotate: '60deg'
     });
-}
+});
 
-gsap.to('section.about img', {
+gsap.to('#particles > div > a > i', {
     scrollTrigger: {
-        trigger: 'section.about img',
-        start: "top 10%",
-        markers: true,
+        trigger: '#particles > div > a > i',
+        start: "top 60%",
+        markers: false,
         scrub: true,
-        onEnter: () => {
-            console.log('enter')
-        },
         toggleActions: "restart pause reverse none"
     },
-    filter: 'blur(8px)',
+    opacity: 0
 });
-
-(document.querySelectorAll(".headline")).forEach(element => {
-    animateHeading(element)
-});
-
-(document.querySelectorAll(".fab")).forEach(element => {
-    animateIcon(element)
-});
-
 
 async function scramble() {
 
@@ -102,7 +109,7 @@ async function scramble() {
     });
 
     bfl.start();
-    await sleep(4000);
+    await sleep(2000);
     bfl.reveal(3000);
 }
 
